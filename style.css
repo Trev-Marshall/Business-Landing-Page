@@ -1,0 +1,387 @@
+* {
+    font-family: "Raleway", sans-serif;
+}
+body {
+    background-color: white;
+    margin: 0;
+    box-sizing: border-box;
+}
+div {
+    background: tan;
+}
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1 1 50%;
+    height: auto;
+}
+
+/* Misc styling start */
+
+.title {
+    position: absolute;
+    margin: 0 50%;
+    font-size: 2rem;
+}
+
+#locate {
+    font-size: 2rem;
+}
+
+/* Misc styling end */
+
+.referal {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    margin: auto auto;
+    font-size: 2rem;
+    max-width: 75%;
+}
+
+/* nav styling start  */
+
+.nav-main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 100;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.315);
+}
+
+img#logo {
+    margin: auto;
+}
+
+.btn-toggle-nav {
+    width: 60px;
+    height: 100%;
+    background-color: #00a7e1;
+    background-image: url("./images/icons8-menu-52.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    cursor: pointer;
+}
+
+.btn-toggle-nav:hover {
+    opacity: 0.7;
+}
+
+.nav-container {
+    height: 60px;
+    width: 100%;
+}
+
+/* nav styling end */
+
+/* .nav-main ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    margin: 0;
+} */
+
+/* .nav-main ul li {
+    list-style: none;
+    line-height: 60px;
+} */
+
+/* .nav-main ul li a {
+    display: block;
+    height: 100%;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #111;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+} */
+
+.nav-sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: calc(100vh - 60px);
+    padding: 0px;
+    background-color: #1b1b1b;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.315);
+}
+
+.nav-sidebar ul {
+    padding-top: 15px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.nav-sidebar ul li {
+    line-height: 60px;
+    list-style: none;
+}
+
+.nav-sidebar ul li span,
+.nav-sidebar ul li a {
+    display: block;
+    height: 60px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-sidebar ul li a:hover {
+    display: block;
+    height: 60px;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    white-space: nowrap;
+    background-color: #222;
+}
+
+.quote-container,
+.split-container,
+.team-container,
+.product-container,
+.map-container,
+.contact-container {
+    margin: 0 0;
+    height: 95vh;
+    display: flex;
+    background: rgb(119, 185, 179);
+}
+
+.quote-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(./images/pexels-pixabay-290275.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Team styling */
+
+img.imgInDiv {
+    height: 400px;
+    width: auto;
+    padding: 0px;
+    margin: 20px;
+    border: 1rem solid #d9e5d6;
+}
+
+.p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    margin: auto 5px;
+    flex-direction: column;
+    font-size: 1.3rem;
+    font-weight: 1000;
+}
+
+.team-container,
+.quote-container,
+.product-container,
+.map-container,
+.contact-container {
+    background-color: tan;
+    margin-left: 60px;
+}
+
+/* Team styling end */
+
+/* Maps start */
+
+#map {
+    height: 400px;
+    width: auto;
+    padding: 0px;
+    margin-top: 80px;
+    border: 1rem solid #d9e5d6;
+    margin-left: 20px;
+}
+
+/* Map end */
+
+/* referal quote start */
+
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    width: 500px;
+    margin: 0.25em 0;
+    padding: 0.35em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+}
+
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #7a7a7a;
+}
+
+blockquote cite {
+    color: #535353;
+    font-size: 17px;
+    display: block;
+    margin-top: 5px;
+}
+
+blockquote cite:before {
+    content: "\2014 \2009";
+}
+
+/* referal quote end */
+
+/* form start */
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto 30px 37%;
+    color: white;
+    text-align: center;
+}
+
+input,
+textarea {
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.contact-container {
+    margin: 0 0;
+    height: 300px;
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(./images/pexels-philipp-birmes-830891.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+label {
+    padding: 10px 0;
+}
+
+/* #sumbit {
+    margin: 10px 0px;
+} */
+
+/* form end */
+
+/* split divs start*/
+
+.split {
+    height: 30vh;
+    width: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(./images/pexels-philipp-birmes-830891.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* split divs end */
+
+@media screen and (max-width: 1060px) {
+    .title#serv {
+        margin-left: 30px;
+    }
+    .team-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .title {
+        position: relative;
+        margin: 0 50%;
+        font-size: 2rem;
+    }
+    div.team-img {
+        margin: auto;
+    }
+
+    .product-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .map-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    #mapDiv {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    #map {
+        height: auto;
+        width: auto;
+    }
+    .p {
+        font-size: 3rem;
+    }
+    img.imgInDiv {
+        height: auto;
+    }
+    .contact-container {
+        height: auto;
+    }
+    form {
+        margin: auto;
+    }
+    label {
+        font-size: 3rem;
+        padding: 10px 40px;
+    }
+    input {
+        margin: auto;
+        width: 75%;
+    }
+    textarea {
+        font-size: 1.2rem;
+        margin: 15px auto;
+    }
+    #submit {
+        margin: 0px 0px;
+    }
+    .nav-sidebar {
+        height: 95%;
+        z-index: 20;
+    }
+}

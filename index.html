@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Lorem Business</title>
+</head>
+<body>
+    <div class="body">
+
+        <!-- nav bar -->
+        <div class="nav-container">
+            <nav id="home" class="nav-main">
+                <div class="btn-toggle-nav" onclick="toggleNav()"></div>
+                <img src="./images/03cd63a673b643b49a1bf017b5b8d716 (2).png" id="logo" alt="BinaryIpsum">
+                <!-- <ul>
+                    <li class="nav-link"><a href="#home">Home</a></li>
+                    <li class="nav-link"><a href="#team">Team</a></li>
+                    <li class="nav-link"><a href="#product">Product</a></li>
+                    <li class="nav-link"><a href="#location">Location</a></li>
+                    <li class="nav-link"><a href="#contact">Contact</a></li>
+                </ul> -->
+            </nav>
+        </div>
+        <!-- End nav bar -->
+
+        <div class="quote-container">
+            <div class="referal"><p><blockquote>
+                Our establishment didn't just grow under the guiding direction of BinaryIpsum's consultants, we boomed, almost
+                doubling revenue and improved multiple facets of our establishment in unison.
+                <cite>Satisfied Client</cite>
+            </blockquote>
+        </p></div>
+        </div>
+
+
+        <div class="team-container" id="team">
+            <div class="title">
+                <h3>Our Team</h3>
+                <hr>
+            </div>
+            <div class="team-img"><img src="./images/pexels-fauxels-3184423.jpg" class="imgInDiv" alt="Our Team"></div>
+            <div class="p"><p>Eight expert consultants strong with more on their way! Each are hand-picked from around the world and provide either remote or in-person expertise with more than 10 years of knowledge in every area they specialize in.</p ></div>
+        </div>
+
+        <div class="split"></div>
+
+        <div class="product-container" id="product">
+            <div class="title" id="serv">
+                <h3>Our Services</h3>
+                <hr>
+            </div>
+            <div class="p">
+                <p>Eight expert consultants strong with more on their way! Each are hand-picked from around the world and provide
+                    either remote or in-person expertise with more than 10 years of knowledge in every area they specialize in.</p>
+            </div>
+            <div class="team-img"><img src="./images/pexels-cottonbro-4098369.jpg" class="imgInDiv"></div>
+        </div>
+        <div class="split"></div>
+        <div class="map-container" id="location">
+
+
+            <div id="mapDiv"><img id="map" src="./images/Screen Shot 2021-02-08 at 9.08.57 PM.png">
+            </div>
+            <div class="p">
+                <div id="locate">
+                    <h3>Location</h3>
+                    <hr>
+                </div>
+                <p>Based out of Salt Lake City, Utah, we make the most out of everything we get our hands on. This includes things from new tech to new ways of taking your investment to a new level! Even though we are based in Utah, being able to remotely consult with our clients alows flexbility and ease of access to our team!</p>
+            </div>
+        </div>
+
+
+        <div class="contact-container" id="contact">
+            <form action="#">
+                <label for="email">Drop an email and your message here and we'll get back to you ASAP.</label>
+                <input type="email" id="email" placeholder="your@email.com">
+                <textarea name="textarea" id="textarea" cols="50" rows="7"></textarea>
+                <input type="submit" id="sumbit">
+            </form>
+        </div>
+
+<!-- hidden nav start -->
+
+        <aside class="nav-sidebar">
+            <ul>
+                <li><span href="#home">Navigation</span></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#product">Services</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </aside>
+
+<!-- hidden nav end -->
+
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
