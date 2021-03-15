@@ -2,9 +2,10 @@
     font-family: "Raleway", sans-serif;
 }
 body {
-    background-color: white;
+    background-color: tan;
     margin: 0;
     box-sizing: border-box;
+
 }
 div {
     background: tan;
@@ -19,16 +20,31 @@ div {
 
 /* Misc styling start */
 
-.title {
-    position: absolute;
-    margin: 0 50%;
-    font-size: 2rem;
+.team-title {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 3rem;
+    width: 80%;
+    margin: auto;
+    color: rgb(34, 34, 34);
+    text-align: center;
+}
+
+.service-title {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 3rem;
+    width: 80%;
+    margin: auto;
+    color: white;
 }
 
 #locate {
-    font-size: 2rem;
+    font-size: 3rem;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0);
+    width: 80%;
+    margin: auto;
+    color: white;
 }
-
 /* Misc styling end */
 
 .referal {
@@ -43,6 +59,23 @@ div {
 
 /* nav styling start  */
 
+.nav-link-bar {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+.nav-link-bar li a {
+    text-decoration: none;
+    color: black;
+    margin: auto 10px;
+    font-size: 1.3rem;
+    transition: all .2s ease-in-out;
+}
+.nav-link-bar li a:hover {
+    color: rgb(125, 125, 230);
+    opacity: .4;
+}
+
 .nav-main {
     position: fixed;
     top: 0;
@@ -56,10 +89,11 @@ div {
 }
 
 img#logo {
-    margin: auto;
+    margin: auto 20px auto auto;
 }
 
 .btn-toggle-nav {
+    display: none;
     width: 60px;
     height: 100%;
     background-color: #00a7e1;
@@ -79,31 +113,6 @@ img#logo {
     width: 100%;
 }
 
-/* nav styling end */
-
-/* .nav-main ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 15px;
-    margin: 0;
-} */
-
-/* .nav-main ul li {
-    list-style: none;
-    line-height: 60px;
-} */
-
-/* .nav-main ul li a {
-    display: block;
-    height: 100%;
-    padding: 0px 10px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #111;
-    font-family: "Raleway", sans-serif;
-    font-size: 16px;
-} */
-
 .nav-sidebar {
     position: fixed;
     left: 0;
@@ -116,6 +125,8 @@ img#logo {
     transition: all 0.3s ease-in-out;
     box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.315);
 }
+
+
 
 .nav-sidebar ul {
     padding-top: 15px;
@@ -188,12 +199,9 @@ img.imgInDiv {
 }
 
 .p {
-    display: flex;
     text-align: center;
-    justify-content: center;
     padding: 20px;
     margin: auto 5px;
-    flex-direction: column;
     font-size: 1.3rem;
     font-weight: 1000;
 }
@@ -207,6 +215,16 @@ img.imgInDiv {
     margin-left: 60px;
 }
 
+.team-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-img {
+    display: flex;
+    flex-direction: row;
+}
+
 /* Team styling end */
 
 /* Maps start */
@@ -218,6 +236,7 @@ img.imgInDiv {
     margin-top: 80px;
     border: 1rem solid #d9e5d6;
     margin-left: 20px;
+    margin: 30px;
 }
 
 /* Map end */
@@ -292,16 +311,12 @@ label {
     padding: 10px 0;
 }
 
-/* #sumbit {
-    margin: 10px 0px;
-} */
-
 /* form end */
 
 /* split divs start*/
 
 .split {
-    height: 30vh;
+    height: 100%;
     width: auto;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url(./images/pexels-philipp-birmes-830891.jpg);
@@ -311,24 +326,35 @@ label {
     background-attachment: fixed;
 }
 
+.split1 {
+    height: 100%;
+    width: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+        url(./images/pexels-snapwire-129830.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 /* split divs end */
 
 @media screen and (max-width: 1060px) {
-    .title#serv {
-        margin-left: 30px;
-    }
     .team-container {
         display: flex;
         flex-direction: column;
-        height: auto;
+        height: 100%;
     }
-    .title {
-        position: relative;
-        margin: 0 50%;
-        font-size: 2rem;
+    .team-img {
+        flex-direction: column;
     }
+
     div.team-img {
         margin: auto;
+    }
+
+    #map {
+        margin: 20px auto;
     }
 
     .product-container {
@@ -349,9 +375,24 @@ label {
 }
 
 @media screen and (max-width: 735px) {
+    .btn-toggle-nav {
+        display: block;
+    }
+
+    .nav-link-bar {
+        display: none;
+    }
+
+
     #map {
         height: auto;
         width: auto;
+    }
+    blockquote {
+        font-size: 1.3em;
+    }
+    .quote-container {
+        height: 100%;
     }
     .p {
         font-size: 3rem;
@@ -372,16 +413,20 @@ label {
     input {
         margin: auto;
         width: 75%;
+        font-size: 3rem;
     }
     textarea {
         font-size: 1.2rem;
         margin: 15px auto;
     }
     #submit {
-        margin: 0px 0px;
+        margin: 10px auto;
     }
     .nav-sidebar {
         height: 95%;
         z-index: 20;
+    }
+    .referal {
+        margin: 20px auto 20px 60px;
     }
 }
